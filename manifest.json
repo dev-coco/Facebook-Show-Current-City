@@ -1,0 +1,37 @@
+{
+    "manifest_version": 2,
+    "name": "显示所在地",
+    "description": "小组加好友辅助，列印出高清头像，显示所在地区。",
+    "author": "dev-coco",
+    "version": "1.0",
+    "browser_action": {
+      "default_icon": "icon.png"
+    },
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "background" : {
+        "scripts" : ["background.js"],
+        "persistent" : false
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://m.facebook.com/composer/*"],
+            "js": ["block.js"],
+            "run_at": "document_end",
+            "all_frames": true
+        }
+    ],
+    "permissions": [
+      "https://www.facebook.com/groups/*",
+      "tabs",
+      "activeTab"
+    ],
+    "options_ui":
+    {
+        "page": "options.html",
+        "open_in_tab": true
+    }
+}
