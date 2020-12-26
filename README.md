@@ -1,2 +1,2 @@
 # Facebook-Show-Current-City
-Show current city at Facebook group members and HD avater. 显示Facebook小组成员地区和高清头像。
+Show Facebook user current city and hometown. 显示用户所在地和家乡。
