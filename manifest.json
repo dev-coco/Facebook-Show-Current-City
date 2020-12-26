@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
-    "name": "显示所在地",
-    "description": "小组加好友辅助，列印出高清头像，显示所在地区。",
+    "name": "显示用户地区",
+    "description": "显示用户所在地区和家乡。",
     "author": "dev-coco",
-    "version": "1.0",
+    "version": "1.1",
     "browser_action": {
       "default_icon": "icon.png"
     },
